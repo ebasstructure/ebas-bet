@@ -47,5 +47,7 @@ Pour un nom de domaine personnalisé (ex. ebas-structure.fr), ajouter un fichier
 
 - Mentions légales (SIREN/SIRET, forme juridique, responsable de publication, hébergeur).
 - Identifiant Formspree.
+- Numéro de téléphone et adresse email de contact (`index.html`, section Nous contacter : remplacer `[numéro à compléter]`, `[email à compléter]` et les valeurs `tel:` / `mailto:`).
+- Vidéo de fond : ajouter `assets/hero.mp4` (sinon le dégradé s'affiche).
 - Vérifier les textes de la section « Maîtrise d'œuvre » et les formulations de la section « À propos ».
 - Remplacer le logo par une version haute résolution si disponible (le fichier actuel fait 500 × 500 px).

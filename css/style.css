@@ -326,6 +326,94 @@ h3 { font-size: 1.15rem; color: var(--navy); }
 .site-footer p { margin: 0; }
 .site-footer a { color: #fff; }
 
+/* Matériaux */
+.chips {
+  list-style: none;
+  padding: 0;
+  margin: -1.5rem auto 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  max-width: 820px;
+}
+.chips li {
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  background: var(--green-light);
+  color: var(--green);
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+/* Démarche */
+.subhead {
+  font-family: var(--font-title);
+  text-align: center;
+  color: var(--navy);
+  font-size: 1.4rem;
+  margin: 4rem 0 2rem;
+}
+.steps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  counter-reset: none;
+}
+.step {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.6rem;
+  text-align: left;
+}
+.step-num {
+  display: inline-grid;
+  place-items: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  background: var(--navy);
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+.step h4 {
+  font-family: var(--font-title);
+  color: var(--green);
+  font-size: 1.1rem;
+  margin: 0 0 0.4rem;
+}
+.step p { margin: 0; color: var(--text); }
+
+/* Bandeau d'appel à l'action */
+.cta-band {
+  background: linear-gradient(120deg, var(--navy-dark), var(--navy));
+  color: #fff;
+  padding: 3rem 0;
+}
+.cta-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.cta-band h2 {
+  font-family: var(--font-title);
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  margin-bottom: 0.4rem;
+}
+.cta-band p { margin: 0; opacity: 0.92; }
+.btn-light { background: #fff; color: var(--navy); }
+.btn-light:hover { background: var(--green-light); }
+
+.contact-line { margin: 0 0 0.6rem; }
+.footer-links { opacity: 0.9; }
+
 /* Responsive */
 @media (max-width: 860px) {
   .nav-toggle { display: flex; }
