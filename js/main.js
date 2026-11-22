@@ -12,13 +12,11 @@
     toggle.addEventListener('click', function () {
       var ouvert = toggle.getAttribute('aria-expanded') === 'true';
       toggle.setAttribute('aria-expanded', String(!ouvert));
-      toggle.setAttribute('aria-label', ouvert ? 'Ouvrir le menu' : 'Fermer le menu');
       nav.classList.toggle('open', !ouvert);
     });
     nav.querySelectorAll('a').forEach(function (lien) {
       lien.addEventListener('click', function () {
         toggle.setAttribute('aria-expanded', 'false');
-        toggle.setAttribute('aria-label', 'Ouvrir le menu');
         nav.classList.remove('open');
       });
     });
@@ -55,13 +53,13 @@
       }
       if (form.action.indexOf('VOTRE_ID') !== -1) {
         statut.className = 'form-status error';
-        statut.textContent = "Le formulaire n'est pas encore configuré. Merci de nous écrire directement par email.";
+        statut.textContent = window.t('form.notConfigured');
         return;
       }
       var bouton = form.querySelector('button[type="submit"]');
       bouton.disabled = true;
       statut.className = 'form-status';
-      statut.textContent = 'Envoi en cours…';
+      statut.textContent = window.t('form.sending');
 
       fetch(form.action, {
         method: 'POST',
@@ -71,13 +69,13 @@
         if (reponse.ok) {
           form.reset();
           statut.className = 'form-status ok';
-          statut.textContent = 'Merci, votre message a bien été envoyé. Nous vous répondrons rapidement.';
+          statut.textContent = window.t('form.success');
         } else {
           throw new Error('HTTP ' + reponse.status);
         }
       }).catch(function () {
         statut.className = 'form-status error';
-        statut.textContent = "Une erreur est survenue. Merci de réessayer ou de nous écrire directement par email.";
+        statut.textContent = window.t('form.error');
       }).finally(function () {
         bouton.disabled = false;
       });

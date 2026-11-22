@@ -9,6 +9,8 @@ index.html            Page d'accueil (accueil, à propos, services, contact)
 mentions-legales.html Mentions légales (à compléter)
 css/style.css         Styles (couleurs dans les variables :root)
 js/main.js            Menu mobile, lien actif, envoi du formulaire
+js/i18n.js            Traductions FR / EN / ES (sélecteur de langue dans l'en-tête)
+css/i18n.css          Styles du sélecteur de langue
 assets/logo-ebas.jpg  Logo
 ```
 
@@ -21,6 +23,12 @@ python3 -m http.server 8000
 ```
 
 puis aller sur http://localhost:8000.
+
+## Langues
+
+Le site est en français, anglais et espagnol. Le visiteur choisit la langue avec les boutons FR / EN / ES ; le choix est mémorisé dans le navigateur. Pour modifier un texte, changer la valeur correspondante dans `js/i18n.js` (les clés sont identiques dans les trois langues) et l'attribut `data-i18n` correspondant dans `index.html`.
+
+Les mentions légales restent en français.
 
 ## Formulaire de contact
 
@@ -47,7 +55,6 @@ Pour un nom de domaine personnalisé (ex. ebas-structure.fr), ajouter un fichier
 
 - Mentions légales (SIREN/SIRET, forme juridique, responsable de publication, hébergeur).
 - Identifiant Formspree.
-- Numéro de téléphone et adresse email de contact (`index.html`, section Nous contacter : remplacer `[numéro à compléter]`, `[email à compléter]` et les valeurs `tel:` / `mailto:`).
 - Vidéo de fond : ajouter `assets/hero.mp4` (sinon le dégradé s'affiche).
 - Vérifier les textes de la section « Maîtrise d'œuvre » et les formulations de la section « À propos ».
 - Remplacer le logo par une version haute résolution si disponible (le fichier actuel fait 500 × 500 px).
