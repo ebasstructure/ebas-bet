@@ -218,6 +218,13 @@ h3 { font-size: 1.15rem; color: var(--navy); }
 
 /* À propos */
 .prose p { margin: 0 0 1.2rem; text-align: justify; }
+.prose-h {
+  font-family: var(--font-title);
+  color: var(--green);
+  font-size: 1.25rem;
+  margin: 2.2rem 0 0.8rem;
+  text-align: left;
+}
 .prose blockquote {
   margin: 2rem 0;
   padding: 1rem 1.5rem;
