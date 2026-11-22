@@ -176,7 +176,9 @@ h3 { font-size: 1.15rem; color: var(--navy); }
   align-items: center;
   color: #fff;
   background:
-    linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 55%, var(--green) 130%);
+    linear-gradient(135deg, rgba(21, 42, 82, 0.55) 0%, rgba(30, 58, 110, 0.6) 55%, rgba(46, 107, 31, 0.5) 130%),
+    url('../assets/hero-chantier.jpg') center / cover no-repeat,
+    var(--navy-dark);
   text-align: center;
   overflow: hidden;
 }
