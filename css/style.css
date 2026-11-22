@@ -176,7 +176,6 @@ h3 { font-size: 1.15rem; color: var(--navy); }
   align-items: center;
   color: #fff;
   background:
-    linear-gradient(135deg, rgba(21, 42, 82, 0.55) 0%, rgba(30, 58, 110, 0.6) 55%, rgba(46, 107, 31, 0.5) 130%),
     url('../assets/hero-chantier.jpg') center / cover no-repeat,
     var(--navy-dark);
   text-align: center;
@@ -194,7 +193,7 @@ h3 { font-size: 1.15rem; color: var(--navy); }
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: linear-gradient(rgba(21, 42, 82, 0.55), rgba(21, 42, 82, 0.7));
+  background: rgba(0, 0, 0, 0.22);
 }
 .hero-content { position: relative; z-index: 2; padding: 4rem 0; }
 @media (prefers-reduced-motion: reduce) {
@@ -204,7 +203,7 @@ h3 { font-size: 1.15rem; color: var(--navy); }
   font-size: clamp(2rem, 5.5vw, 3.6rem);
   font-weight: 500;
   margin-bottom: 1.2rem;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.7), 0 0 4px rgba(0, 0, 0, 0.4);
 }
 .hero .accent { color: #8fd17e; font-weight: 700; }
 .hero .italic { font-style: italic; }
